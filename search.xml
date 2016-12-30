@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title><![CDATA[使用Jenkins每天自动更新自己的博客]]></title>
-      <url>http://yoursite.com/2016/12/29/%E4%BD%BF%E7%94%A8Jenkins%E6%AF%8F%E5%A4%A9%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-      <content type="html"><![CDATA[<h3 id="下载安装Jenkins"><a href="#下载安装Jenkins" class="headerlink" title="下载安装Jenkins"></a>下载安装Jenkins</h3><p>Jenkins可以到<a href="https://jenkins.io/" target="_blank" rel="external">官网</a>下载，也可以选择从我的网盘中下载，取决于下载的速度</p>
-<ul>
-<li>windows版本</li>
-<li>mac版本</li>
-</ul>
-<p>安装完成之后jenkins将自动启动在<a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080/</a></p>
-<h3 id="创建同步JOB"><a href="#创建同步JOB" class="headerlink" title="创建同步JOB"></a>创建同步JOB</h3><p><strong>同步时间</strong></p>
-<ul>
-<li>对于公司用的windows，设置时间为周一到周五17:00</li>
-<li>对于个人自己的MAC，设置时间为每5分钟同步一次</li>
-</ul>
-<p><strong>代码同步方法</strong></p>
-<ul>
-<li>检测文件是否有变动</li>
-<li>如果文件有变动的话使用命令添加并push到远端</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> <span class="string">"C:\Users\exigche\blog"</span></div><div class="line"><span class="string">"C:\Program Files (x86)\Git\bin\git"</span> diff-index --quiet HEAD -- || <span class="string">"C:\Program Files (x86)\Git\bin\git"</span> add -u &amp;&amp; <span class="string">"C:\Program Files (x86)\Git\bin\git"</span> commit -m <span class="string">"auto sync"</span> &amp;&amp; git push origin master</div></pre></td></tr></table></figure>
-<p><strong>博客的同步</strong><br>博客使用的是hexo，同步时直接运行如下命令</p>
-<pre><code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy
-</code></pre><p><strong>Git仓库的托管</strong></p>
-<p>暂定使用<a href="https://coding.net/" target="_blank" rel="external">https://coding.net/</a>，后面看看仓库的速度如果不行的话再考虑换其他的仓库</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Markdown写作工具的选择]]></title>
       <url>http://yoursite.com/2016/12/27/Markdown%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7%E7%9A%84%E9%80%89%E6%8B%A9/</url>
       <content type="html"><![CDATA[<p>由于最近在写自己的博客，因此需要找个合适的markdown编辑软件，下面会列一些我使用过的markdown软件。</p>
