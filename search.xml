@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title><![CDATA[bootstrap学习笔记]]></title>
+      <url>http://yoursite.com/2016/12/30/bootstrap%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
+<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><p>bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">576px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">540px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">720px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">1140px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>bootstrap主要定义了以下几个分辨率切换点</p>
+<ul>
+<li>576</li>
+<li>768</li>
+<li>960</li>
+<li>1200</li>
+</ul>
+<h3 id="网格系统"><a href="#网格系统" class="headerlink" title="网格系统"></a>网格系统</h3><p>bootstrap使用了叫做grid的网格系统来进行布局。网格的使用主要是：container -&gt; row -&gt; col。 要使用网格系统，首先必须添加一个class为container或者container-fluid的html元素.<br><strong>container</strong></p>
+<ul>
+<li>定义了15px的左右padding</li>
+<li>根据不通的屏幕尺寸，定义了container的width</li>
+<li>自动container的width，剩余宽度自动左右平均margin</li>
+<li>定义了最大width为100%，这样容器不会超过view的大小</li>
+<li>另外针对不同的parent，有特殊的定制</li>
+</ul>
+<p><strong>container-fluid</strong></p>
+<ul>
+<li>定义了15px的左右padding</li>
+<li></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Markdown写作工具的选择]]></title>
       <url>http://yoursite.com/2016/12/27/Markdown%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7%E7%9A%84%E9%80%89%E6%8B%A9/</url>
       <content type="html"><![CDATA[<p>由于最近在写自己的博客，因此需要找个合适的markdown编辑软件，下面会列一些我使用过的markdown软件。</p>
