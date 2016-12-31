@@ -95,7 +95,7 @@
 媒体查询bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置
 123456789101112131415161718192021222324252627@media (min-">
 <meta property="og:image" content="http://p1.bqimg.com/567571/76676867f16a93e7.png">
-<meta property="og:updated_time" content="2016-12-31T02:56:05.000Z">
+<meta property="og:updated_time" content="2016-12-31T03:56:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bootstrap学习笔记">
 <meta name="twitter:description" content="用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。
@@ -395,7 +395,10 @@
 </ul>
 </li>
 <li>bootstrap的grid在不同分辨率上的行为<br><img src="http://p1.bqimg.com/567571/76676867f16a93e7.png" alt=""></li>
-<li>col-[xs,sm,md,lg]-push-[1..12]<br>  *定义列的左侧位置</li>
+<li>col-[xs,sm,md,lg]-push-[1..12]<ul>
+<li>定义列的左侧位置</li>
+</ul>
+</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-push-1</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-push-0</span> &#123;</div><div class="line">  <span class="attribute">left</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
@@ -404,13 +407,24 @@
 </ul>
 </li>
 </ul>
-<pre><code class="css"><span class="selector-class">.col-xs-offset-1</span> {
-  <span class="attribute">margin-left</span>: <span class="number">8.33333333%</span>;
-}
-<span class="selector-class">.col-xs-offset-0</span> {
-  <span class="attribute">margin-left</span>: <span class="number">0</span>;
-}
-</code></pre>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-offset-1</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-offset-0</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line">```	 </div><div class="line">* <span class="selector-tag">col-</span><span class="selector-attr">[xs,sm,md,lg]</span><span class="selector-tag">-pull-</span><span class="selector-attr">[1..12]</span></div><div class="line">	* 定义了列的右侧位置</div><div class="line"></div><div class="line">```<span class="selector-tag">css</span></div><div class="line"><span class="selector-class">.col-xs-pull-1</span> &#123;</div><div class="line">  <span class="attribute">right</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-pull-0</span> &#123;</div><div class="line">  <span class="attribute">right</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><p>标题 h1,h2,h3,h4,h5,h6</p>
+<ul>
+<li>h1, h2, h3, h4, h5, h6</li>
+<li>.h1, .h2, .h3, .h4, .h5, .h6</li>
+<li>36px, 30px, 24px, 18px, 12px</li>
+</ul>
+<p>副标题 small</p>
+<ul>
+<li>颜色</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-class">.small</span> &#123;</div><div class="line">  <span class="attribute">font-weight</span>: normal;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1</span>;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#777</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>h1,h2,h3 margin-top 20px, margin-bottom 10px</li>
+<li>h4,h5,h6 margin-top 10px, margin-bottom 10px</li>
+<li>h1,h2,h3对应的small的font-size为65%</li>
+<li>h4,h5,h6对应的small的font-size为75%</li>
+</ul>
 
       
     </div>
@@ -452,6 +466,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/31/Mac使用技巧/" rel="prev" title="Mac使用技巧">
+                Mac使用技巧 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -521,7 +539,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -532,7 +550,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -567,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询"><span class="nav-number">1.</span> <span class="nav-text">媒体查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网格系统"><span class="nav-number">2.</span> <span class="nav-text">网格系统</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询"><span class="nav-number">1.</span> <span class="nav-text">媒体查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网格系统"><span class="nav-number">2.</span> <span class="nav-text">网格系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版"><span class="nav-number">3.</span> <span class="nav-text">排版</span></a></li></ol></div>
             
 
           </div>
