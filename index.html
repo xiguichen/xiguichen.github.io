@@ -341,11 +341,16 @@
       
         
           
-            <p>在自己的hp的电脑上搞了个黑苹果，自此开始了自己的Mac之旅。使用了一段时间了，遇到了不少的问题，该文章用于记录自己使用过程中遇到的一些问题和解决方法。</p>
-<h3 id="关机不断电问题"><a href="#关机不断电问题" class="headerlink" title="关机不断电问题"></a>关机不断电问题</h3><p>黑苹果很可能会出现关机不断电的问题，主要可能是电池的驱动和usb3.0的问题。在我的电脑上，电源驱动已经原生驱动，主要问题可能是usb3.0引起的，为了解决方法可以禁用掉usb3.0，也可以选择别的接口插入usb设备。另外还要注意，黑苹果下关机后电源指示灯熄灭需要有一定的时间，不是关机黑屏后会立马熄灭，不要着急强按电源键。</p>
-<h3 id="如何使用360wifi"><a href="#如何使用360wifi" class="headerlink" title="如何使用360wifi"></a>如何使用360wifi</h3><p><a href="https://pan.baidu.com/s/1gfhuAGV" target="_blank" rel="external">https://pan.baidu.com/s/1gfhuAGV</a><br>下载驱动，用<a href="https://pan.baidu.com/s/1kUSZtiv" target="_blank" rel="external">kext utility</a>进行安装，安装完成后重启电脑。另外需要安装<a href="https://pan.baidu.com/s/1jI7CUTg" target="_blank" rel="external">wireless utility</a>。注意，由于不是使用的原生驱动，升级系统之后会丢失，需要再次安装。</p>
-
-          
+          在自己的hp的电脑上搞了个黑苹果，自此开始了自己的Mac之旅。使用了一段时间了，遇到了不少的问题，该文章用于记录自己使用过程中遇到的一些问题和解决方法。
+关机不断电问题黑苹果很可能会出现关机不断电的问题，主要可能是电池的驱动和usb3.0的问题。在我的电脑上，电源驱动已经原生驱动，主要问题可能是us
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/31/Mac使用技巧/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -462,87 +467,17 @@
       
         
           
-            <p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
-<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><p>bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">576px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">540px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">720px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">1140px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>bootstrap主要定义了以下几个分辨率切换点</p>
-<ul>
-<li>576</li>
-<li>768</li>
-<li>960</li>
-<li>1200</li>
-</ul>
-<h3 id="网格系统"><a href="#网格系统" class="headerlink" title="网格系统"></a>网格系统</h3><p>bootstrap使用了叫做grid的网格系统来进行布局。网格的使用主要是：container -&gt; row -&gt; col。 要使用网格系统，首先必须添加一个class为container或者container-fluid的html元素.<br><strong>container</strong></p>
-<ul>
-<li>定义了15px的左右padding</li>
-<li>根据不通的屏幕尺寸，定义了container的width</li>
-<li>自动container的width，剩余宽度自动左右平均margin</li>
-<li>定义了最大width为100%，这样容器不会超过viewport的大小</li>
-<li>另外针对不同的parent，有特殊的定制</li>
-</ul>
-<p><strong>container-fluid</strong></p>
-<ul>
-<li>定义了15px的左右padding</li>
-<li>相对布局</li>
-<li>左右自动的margin,基本回占满viewport</li>
-</ul>
-<p><strong>row</strong></p>
-<ul>
-<li>定义了左右-15px的margin，消除掉container中的15px的padding</li>
-<li>bootstrap v4中使用的flex布局</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.row</span> &#123;</div><div class="line">  <span class="attribute">display</span>: -webkit-box;</div><div class="line">  <span class="attribute">display</span>: -webkit-flex;</div><div class="line">  <span class="attribute">display</span>: -ms-flexbox;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">-webkit-flex-wrap</span>: wrap;</div><div class="line">      <span class="attribute">-ms-flex-wrap</span>: wrap;</div><div class="line">          <span class="attribute">flex-wrap</span>: wrap;</div><div class="line">  <span class="attribute">margin-right</span>: -<span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-left</span>: -<span class="number">15px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>col</strong></p>
-<ul>
-<li>bootstrap默认定义了12列，这样可以方便的支持等分成2列，3列，4列，用户根据需要可以自己改变默认方式自己定制</li>
-<li>bootstrap给不同的屏幕尺寸定义了不同的col class<ul>
-<li>col-xs</li>
-<li>col-sm</li>
-<li>col-md</li>
-<li>col-lg</li>
-</ul>
-</li>
-<li>col-[xs,sm,md,lg]-[1,12]提供了相对布局，15px的左右padding，左浮动</li>
-<li>使用媒体查询，根据不同的viewport大小，将有不同类型的col-[xs,sm,md,lg]生效<ul>
-<li>col-xs: &lt; 768px  手机</li>
-<li>col-sm: 768px ~ 991px 平板</li>
-<li>col-md: 992px ~ 1199px 桌面显示器</li>
-<li>col-lg: &gt; 1200px 大桌面显示器</li>
-</ul>
-</li>
-<li>bootstrap的grid在不同分辨率上的行为<br><img src="http://p1.bqimg.com/567571/76676867f16a93e7.png" alt=""></li>
-<li>col-[xs,sm,md,lg]-push-[1..12]<ul>
-<li>定义列的左侧位置</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-push-1</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-push-0</span> &#123;</div><div class="line">  <span class="attribute">left</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>col-[xs,sm,md,lg]-offset-[1..12]<ul>
-<li>定义列的margin-left</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-offset-1</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-offset-0</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line">```	 </div><div class="line">* <span class="selector-tag">col-</span><span class="selector-attr">[xs,sm,md,lg]</span><span class="selector-tag">-pull-</span><span class="selector-attr">[1..12]</span></div><div class="line">	* 定义了列的右侧位置</div><div class="line"></div><div class="line">```<span class="selector-tag">css</span></div><div class="line"><span class="selector-class">.col-xs-pull-1</span> &#123;</div><div class="line">  <span class="attribute">right</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-pull-0</span> &#123;</div><div class="line">  <span class="attribute">right</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><p>标题 h1,h2,h3,h4,h5,h6</p>
-<ul>
-<li>h1, h2, h3, h4, h5, h6</li>
-<li>.h1, .h2, .h3, .h4, .h5, .h6</li>
-<li>36px, 30px, 24px, 18px, 12px</li>
-</ul>
-<p>副标题 small</p>
-<ul>
-<li>颜色</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-class">.small</span> &#123;</div><div class="line">  <span class="attribute">font-weight</span>: normal;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1</span>;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#777</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>h1,h2,h3 margin-top 20px, margin-bottom 10px</li>
-<li>h4,h5,h6 margin-top 10px, margin-bottom 10px</li>
-<li>h1,h2,h3对应的small的font-size为65%</li>
-<li>h4,h5,h6对应的small的font-size为75%</li>
-</ul>
-
-          
+          用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。
+媒体查询bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置
+1234567
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/30/bootstrap学习笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -659,39 +594,20 @@
       
         
           
-            <p>由于最近在写自己的博客，因此需要找个合适的markdown编辑软件，下面会列一些我使用过的markdown软件。</p>
-<h3 id="Markpad"><a href="#Markpad" class="headerlink" title="Markpad"></a>Markpad</h3><p>Markpad是一款windows下的markdown编辑软件。<br>优点</p>
-<ul>
-<li>可以提供实时的markdown效果的预览  </li>
-<li>软件提供了大量的快捷键，快捷键比较易于记忆  <ul>
-<li>快捷键以ctrl + 功能缩写或者数字，比如粗体 ctrl + b，head1: ctrl + 1</li>
-</ul>
-</li>
-</ul>
-<p>缺点</p>
-<ul>
-<li>无序列表编辑时当前正在编辑的最后一行经常显示有问题</li>
-<li>不支持hexo的博客开头的title，date那一段</li>
-</ul>
-<h3 id="MacDown"><a href="#MacDown" class="headerlink" title="MacDown"></a>MacDown</h3><p>Macdown为Mac下的一款开源的markdown编辑软件。<br>优点</p>
-<ul>
-<li>可以提供实时的markdown效果的预览</li>
-<li>支持hexo的博客开头的title，date那一段</li>
-</ul>
-<p>缺点</p>
-<ul>
-<li>快捷方式的命名不是很一致，有的快捷键要加shift，有些不需要加</li>
-<li>软件通过github的https下载，国内被墙，下载速度极慢，用brew安装基本总是超时</li>
-</ul>
-<h3 id="图床选择"><a href="#图床选择" class="headerlink" title="图床选择"></a>图床选择</h3><ul>
-<li><a href="http://yotuku.cn/#/" target="_blank" rel="external">youtuku</a><ul>
-<li>界面清爽</li>
-<li>上传的图片压缩过，不是很清楚</li>
-</ul>
-</li>
-</ul>
+          由于最近在写自己的博客，因此需要找个合适的markdown编辑软件，下面会列一些我使用过的markdown软件。
+MarkpadMarkpad是一款windows下的markdown编辑软件。优点
 
-          
+可以提供实时的markdown效果的预览  
+软件提供了大量的快捷键，快捷键比较易于记忆  
+快捷键
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/27/Markdown写作工具的选择/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -808,80 +724,19 @@
       
         
           
-            <p>研究bootstrap的时候偶然了解到了hexo，看了下确实不错，因此萌发了想搞个自己的博客的念头。<br>只所以选择hexo是因为他是跨平台的，便于在windows和mac下使用。</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><pre><code>npm install -g hexo
-</code></pre><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><pre><code>hexo init
-</code></pre><p>初始化后会生成相应的目录结构</p>
-<pre><code>exigche@CN00082139 C:\Users\exigche\blog
-$ dir
- Volume in drive C is OSDISK
- Volume Serial Number is D83B-A7BE
-
- Directory of C:\Users\exigche\blog
-
-12/27/2016  09:42 AM&lt;DIR&gt;  .
-12/27/2016  09:42 AM&lt;DIR&gt;  ..
-12/27/2016  09:37 AM71 .gitignore
-12/27/2016  09:42 AM&lt;DIR&gt;  node_modules
-12/27/2016  09:37 AM   461 package.json
-12/27/2016  09:37 AM&lt;DIR&gt;  scaffolds
-12/27/2016  09:37 AM&lt;DIR&gt;  source
-12/27/2016  09:37 AM&lt;DIR&gt;  themes
-12/27/2016  09:37 AM 1,554 _config.yml
-   3 File(s)  2,086 bytes
-   6 Dir(s)  19,547,365,376 bytes free
-
-exigche@CN00082139 C:\Users\exigche\blog
-$   
-</code></pre><h4 id="编辑-config-yml"><a href="#编辑-config-yml" class="headerlink" title="编辑_config.yml"></a>编辑_config.yml</h4><p>翻到最下面，修改如下</p>
-<pre><code># Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/xiguichen/xiguichen.github.io.git
-</code></pre><p>然后执行命令：</p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>修改主题，我使用的是下面的主题</p>
-<p><a href="https://github.com/iissnan/hexo-theme-next" title="next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a></p>
-<p>使用方法，修改如下代码, 修改默认主题为next</p>
-<pre><code># Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-</code></pre><p>切换到theme目录，clone相应的主题</p>
-<pre><code>$ git clone https://github.com/iissnan/hexo-theme-next.git next
-Cloning into &apos;next&apos;...
-remote: Counting objects: 7390, done.
-remote: Total 7390 (delta 0), reused 0 (delta 0), pack-reused 7390
-Receiving objects: 100% (7390/7390), 11.32 MiB | 1015.00 KiB/s, done.
-Resolving deltas: 100% (4006/4006), done.
-Checking connectivity... done.
-</code></pre><p>本地预览</p>
-<pre><code>hexo server
-</code></pre><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><pre><code>hexo new &quot;My New Post&quot;
-</code></pre><h3 id="产生静态文件"><a href="#产生静态文件" class="headerlink" title="产生静态文件"></a>产生静态文件</h3><pre><code>hexo generate
-</code></pre><h3 id="添加标签"><a href="#添加标签" class="headerlink" title="添加标签"></a>添加标签</h3><p>首先需要添加标签页</p>
-<pre><code>hexo new page tags
-</code></pre><p>标签页添加完成后标签</p>
-<pre><code>$ vim source\tags\index.md
-</code></pre><p>添加</p>
-<pre><code>type: &quot;tags&quot;
-</code></pre><p><a href="http://theme-next.iissnan.com/theme-settings.html#tags-page" target="_blank" rel="external">http://theme-next.iissnan.com/theme-settings.html#tags-page</a></p>
-<h3 id="添加search功能"><a href="#添加search功能" class="headerlink" title="添加search功能"></a>添加search功能</h3><p>安装hexo-generator-search</p>
-<pre><code>$ npm install hexo-generator-search --save
-</code></pre><p>添加如下到_config.yml</p>
-<pre><code>search:
-  path: search.xml
-  field: post
-</code></pre><h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><pre><code>hexo deploy
-</code></pre><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h5 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git."></a>ERROR Deployer not found: git.</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bogon:blog exigche$ hexo deploy</div><div class="line">ERROR Deployer not found: git</div></pre></td></tr></table></figure>
-<p><strong>解决方法</strong><br><code>cnpm install hexo-deployer-git --save</code></p>
-<h4 id="WARN-No-layout-tags-index-html"><a href="#WARN-No-layout-tags-index-html" class="headerlink" title="WARN  No layout: tags/index.html"></a>WARN  No layout: tags/index.html</h4><p>Mac下的执行hexo generate报错，因为Mac下的是我从自己的repository中下载的windows下的。当时添加了next主题，而git add的时候没有能正常的将next主题add进去，导致next是个空目录，而hexo尝试产生静态的文件的时候会到next下去找相应的layout文件，导致无法找到相应的layout文件。解决方法，删除next目录，重新clone主题。</p>
-<h3 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h3><p><a href="https://hexo.io/docs/writing.html" title="写作" target="_blank" rel="external">https://hexo.io/docs/writing.html</a></p>
-<p><a href="https://hexo.io/docs/server.html" title="本地预览" target="_blank" rel="external">https://hexo.io/docs/server.html</a></p>
-<p><a href="https://hexo.io/docs/deployment.html" title="部署" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></p>
-
-          
+          研究bootstrap的时候偶然了解到了hexo，看了下确实不错，因此萌发了想搞个自己的博客的念头。只所以选择hexo是因为他是跨平台的，便于在windows和mac下使用。
+准备工作安装hexonpm install -g hexo
+初始化hexo init
+初始化后会生成相应的目录结构
+exig
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/27/如何使用hexo-github搭建自己的博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
