@@ -86,6 +86,17 @@
 <li>h1,h2,h3对应的small的font-size为65%</li>
 <li>h4,h5,h6对应的small的font-size为75%</li>
 </ul>
+<h4 id="页面主体与段落-body-p"><a href="#页面主体与段落-body-p" class="headerlink" title="页面主体与段落 body p"></a>页面主体与段落 body p</h4><ul>
+<li>颜色#333，背景色#fff</li>
+<li>字体大小14px</li>
+<li>行高1.43</li>
+<li>p元素被额外赋予了1/2行高的底边距（10px）</li>
+<li>lead用于突出显示段落，调大了默认的字体和下补白</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.lead</span> &#123;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</div><div class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1.4</span>;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.lead</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">21px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li></li>
+</ul>
 ]]></content>
     </entry>
     
