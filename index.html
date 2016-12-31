@@ -356,14 +356,56 @@
 <li>定义了15px的左右padding</li>
 <li>根据不通的屏幕尺寸，定义了container的width</li>
 <li>自动container的width，剩余宽度自动左右平均margin</li>
-<li>定义了最大width为100%，这样容器不会超过view的大小</li>
+<li>定义了最大width为100%，这样容器不会超过viewport的大小</li>
 <li>另外针对不同的parent，有特殊的定制</li>
 </ul>
 <p><strong>container-fluid</strong></p>
 <ul>
 <li>定义了15px的左右padding</li>
-<li></li>
+<li>相对布局</li>
+<li>左右自动的margin,基本回占满viewport</li>
 </ul>
+<p><strong>row</strong></p>
+<ul>
+<li>定义了左右-15px的margin，消除掉container中的15px的padding</li>
+<li>bootstrap v4中使用的flex布局</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.row</span> &#123;</div><div class="line">  <span class="attribute">display</span>: -webkit-box;</div><div class="line">  <span class="attribute">display</span>: -webkit-flex;</div><div class="line">  <span class="attribute">display</span>: -ms-flexbox;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">-webkit-flex-wrap</span>: wrap;</div><div class="line">      <span class="attribute">-ms-flex-wrap</span>: wrap;</div><div class="line">          <span class="attribute">flex-wrap</span>: wrap;</div><div class="line">  <span class="attribute">margin-right</span>: -<span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-left</span>: -<span class="number">15px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>col</strong></p>
+<ul>
+<li>bootstrap默认定义了12列，这样可以方便的支持等分成2列，3列，4列，用户根据需要可以自己改变默认方式自己定制</li>
+<li>bootstrap给不同的屏幕尺寸定义了不同的col class<ul>
+<li>col-xs</li>
+<li>col-sm</li>
+<li>col-md</li>
+<li>col-lg</li>
+</ul>
+</li>
+<li>col-[xs,sm,md,lg]-[1,12]提供了相对布局，15px的左右padding，左浮动</li>
+<li>使用媒体查询，根据不同的viewport大小，将有不同类型的col-[xs,sm,md,lg]生效<ul>
+<li>col-xs: &lt; 768px  手机</li>
+<li>col-sm: 768px ~ 991px 平板</li>
+<li>col-md: 992px ~ 1199px 桌面显示器</li>
+<li>col-lg: &gt; 1200px 大桌面显示器</li>
+</ul>
+</li>
+<li>bootstrap的grid在不同分辨率上的行为<br><img src="http://p1.bqimg.com/567571/76676867f16a93e7.png" alt=""></li>
+<li>col-[xs,sm,md,lg]-push-[1..12]<br>  *定义列的左侧位置</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-push-1</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-push-0</span> &#123;</div><div class="line">  <span class="attribute">left</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>col-[xs,sm,md,lg]-offset-[1..12]<ul>
+<li>定义列的margin-left</li>
+</ul>
+</li>
+</ul>
+<pre><code class="css"><span class="selector-class">.col-xs-offset-1</span> {
+  <span class="attribute">margin-left</span>: <span class="number">8.33333333%</span>;
+}
+<span class="selector-class">.col-xs-offset-0</span> {
+  <span class="attribute">margin-left</span>: <span class="number">0</span>;
+}
+</code></pre>
 
           
         
@@ -779,7 +821,7 @@ Checking connectivity... done.
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
