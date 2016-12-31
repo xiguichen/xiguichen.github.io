@@ -25,28 +25,25 @@
 <li>960</li>
 <li>1200</li>
 </ul>
-<h3 id="网格系统"><a href="#网格系统" class="headerlink" title="网格系统"></a>网格系统</h3><p>bootstrap使用了叫做grid的网格系统来进行布局。网格的使用主要是：container -&gt; row -&gt; col。 要使用网格系统，首先必须添加一个class为container或者container-fluid的html元素.<br><strong>container</strong></p>
-<ul>
+<h3 id="网格系统"><a href="#网格系统" class="headerlink" title="网格系统"></a>网格系统</h3><p>bootstrap使用了叫做grid的网格系统来进行布局。网格的使用主要是：container -&gt; row -&gt; col。 要使用网格系统，首先必须添加一个class为container或者container-fluid的html元素.  </p>
+<h4 id="container"><a href="#container" class="headerlink" title="container"></a>container</h4><ul>
 <li>定义了15px的左右padding</li>
 <li>根据不通的屏幕尺寸，定义了container的width</li>
 <li>自动container的width，剩余宽度自动左右平均margin</li>
 <li>定义了最大width为100%，这样容器不会超过viewport的大小</li>
 <li>另外针对不同的parent，有特殊的定制</li>
 </ul>
-<p><strong>container-fluid</strong></p>
-<ul>
+<h4 id="container-fluid"><a href="#container-fluid" class="headerlink" title="container-fluid"></a>container-fluid</h4><ul>
 <li>定义了15px的左右padding</li>
 <li>相对布局</li>
 <li>左右自动的margin,基本回占满viewport</li>
 </ul>
-<p><strong>row</strong></p>
-<ul>
+<h4 id="row"><a href="#row" class="headerlink" title="row"></a>row</h4><ul>
 <li>定义了左右-15px的margin，消除掉container中的15px的padding</li>
 <li>bootstrap v4中使用的flex布局</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.row</span> &#123;</div><div class="line">  <span class="attribute">display</span>: -webkit-box;</div><div class="line">  <span class="attribute">display</span>: -webkit-flex;</div><div class="line">  <span class="attribute">display</span>: -ms-flexbox;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">-webkit-flex-wrap</span>: wrap;</div><div class="line">      <span class="attribute">-ms-flex-wrap</span>: wrap;</div><div class="line">          <span class="attribute">flex-wrap</span>: wrap;</div><div class="line">  <span class="attribute">margin-right</span>: -<span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-left</span>: -<span class="number">15px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>col</strong></p>
-<ul>
+<h4 id="col"><a href="#col" class="headerlink" title="col"></a>col</h4><ul>
 <li>bootstrap默认定义了12列，这样可以方便的支持等分成2列，3列，4列，用户根据需要可以自己改变默认方式自己定制</li>
 <li>bootstrap给不同的屏幕尺寸定义了不同的col class<ul>
 <li>col-xs</li>
@@ -77,18 +74,13 @@
 </li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-offset-1</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-offset-0</span> &#123;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line">```	 </div><div class="line">* <span class="selector-tag">col-</span><span class="selector-attr">[xs,sm,md,lg]</span><span class="selector-tag">-pull-</span><span class="selector-attr">[1..12]</span></div><div class="line">	* 定义了列的右侧位置</div><div class="line"></div><div class="line">```<span class="selector-tag">css</span></div><div class="line"><span class="selector-class">.col-xs-pull-1</span> &#123;</div><div class="line">  <span class="attribute">right</span>: <span class="number">8.33333333%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.col-xs-pull-0</span> &#123;</div><div class="line">  <span class="attribute">right</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><p>标题 h1,h2,h3,h4,h5,h6</p>
-<ul>
+<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><h4 id="标题-h1-h2-h3-h4-h5-h6"><a href="#标题-h1-h2-h3-h4-h5-h6" class="headerlink" title="标题 h1,h2,h3,h4,h5,h6"></a>标题 h1,h2,h3,h4,h5,h6</h4><ul>
 <li>h1, h2, h3, h4, h5, h6</li>
 <li>.h1, .h2, .h3, .h4, .h5, .h6</li>
 <li>36px, 30px, 24px, 18px, 12px</li>
 </ul>
-<p>副标题 small</p>
-<ul>
-<li>颜色</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-tag">small</span>,</div><div class="line"><span class="selector-tag">h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-tag">h6</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h1</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h2</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h3</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h4</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h5</span> <span class="selector-class">.small</span>,</div><div class="line"><span class="selector-class">.h6</span> <span class="selector-class">.small</span> &#123;</div><div class="line">  <span class="attribute">font-weight</span>: normal;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1</span>;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#777</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
+<h4 id="副标题-small"><a href="#副标题-small" class="headerlink" title="副标题 small"></a>副标题 small</h4><ul>
+<li>颜色 #777</li>
 <li>h1,h2,h3 margin-top 20px, margin-bottom 10px</li>
 <li>h4,h5,h6 margin-top 10px, margin-bottom 10px</li>
 <li>h1,h2,h3对应的small的font-size为65%</li>
