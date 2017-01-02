@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[提高百度云下载速度]]></title>
+      <url>http://yoursite.com/2017/01/02/%E6%8F%90%E9%AB%98%E7%99%BE%E5%BA%A6%E4%BA%91%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6/</url>
+      <content type="html"><![CDATA[<p>百度云对下载速度进行了限制，为了提高下载速度可以使用<a href="https://github.com/GangZhuo/BaiduPCS" target="_blank" rel="external">BaiduPcs</a>工具进行下载。<br>以下是Mac下安装该软看，具体可以参考帮助文档</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>如果没有安装openssl的话需要安装openssl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install openssl</div></pre></td></tr></table></figure>
+<p>如果已经安装过的话直接下面步骤</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git clone git@github.com:GangZhuo/BaiduPCS.git</div><div class="line">cd BaiduPCS</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>下载之前设置下线程数目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pcs set --max_thread=&quot;10&quot;</div></pre></td></tr></table></figure>
+<ul>
+<li>使用pcs login命令登陆</li>
+<li>使用pcs cd 进入具体目录</li>
+<li>使用pcs download &lt;远程文件名&gt; &lt;本地文件名&gt; 进行下载</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Mac使用技巧]]></title>
       <url>http://yoursite.com/2016/12/31/Mac%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
       <content type="html"><![CDATA[<p>在自己的hp的电脑上搞了个黑苹果，自此开始了自己的Mac之旅。使用了一段时间了，遇到了不少的问题，该文章用于记录自己使用过程中遇到的一些问题和解决方法。</p>
@@ -15,7 +33,18 @@
     <entry>
       <title><![CDATA[bootstrap学习笔记]]></title>
       <url>http://yoursite.com/2016/12/30/bootstrap%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
+      <content type="html"><![CDATA[<p><link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></p>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
+<h3 id="引入bootstrap库"><a href="#引入bootstrap库" class="headerlink" title="引入bootstrap库"></a>引入bootstrap库</h3><p>为了提高速度，最好采用CDN的bootstrap，jquery需要在bootstrap之前引入，否则可能会出现问题。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;link href=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</div><div class="line">&lt;script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<button class="btn btn-danger">button</button>
+
 <h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><p>bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">576px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">540px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">720px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">1140px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>bootstrap主要定义了以下几个分辨率切换点</p>
@@ -55,8 +84,8 @@
 <li>col-[xs,sm,md,lg]-[1,12]提供了相对布局，15px的左右padding，左浮动</li>
 <li>使用媒体查询，根据不同的viewport大小，将有不同类型的col-[xs,sm,md,lg]生效<ul>
 <li>col-xs: &lt; 768px  手机</li>
-<li>col-sm: 768px ~ 991px 平板</li>
-<li>col-md: 992px ~ 1199px 桌面显示器</li>
+<li>col-sm: &gt; 768px  平板</li>
+<li>col-md: &gt; 992px  桌面显示器</li>
 <li>col-lg: &gt; 1200px 大桌面显示器</li>
 </ul>
 </li>
@@ -95,8 +124,34 @@
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.lead</span> &#123;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</div><div class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1.4</span>;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.lead</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">21px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
-<li></li>
+<li><h4 id="内联文本元素"><a href="#内联文本元素" class="headerlink" title="内联文本元素"></a>内联文本元素</h4><h5 id="标记-高亮-mark"><a href="#标记-高亮-mark" class="headerlink" title="标记 高亮 mark"></a>标记 高亮 mark</h5><p>mark元素用于高亮显示文本，更改了背景色和前景色已经padding</p>
+</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mark</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#ff0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">mark</span>,</div><div class="line"><span class="selector-class">.mark</span> &#123;</div><div class="line">  <span class="attribute">padding</span>: .<span class="number">2em</span>;</div><div class="line">  <span class="attribute">background-color</span>: <span class="number">#fcf8e3</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>this is a <mark>mark</mark></p>
+<h3 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h3><h4 id="navbar"><a href="#navbar" class="headerlink" title="navbar"></a>navbar</h4><pre><code>* display: none
+* 相对布局
+* 最小高度50px
+* 下补足20px
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.navbar</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.navbar</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">min-height</span>: <span class="number">50px</span>;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid transparent;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="navbar-header"><a href="#navbar-header" class="headerlink" title="navbar-header"></a>navbar-header</h4><pre><code>* 大于768px时左浮动
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.navbar-header</span> &#123;</div><div class="line">    <span class="attribute">float</span>: left;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="navbar-brand"><a href="#navbar-brand" class="headerlink" title="navbar-brand"></a>navbar-brand</h4><ul>
+<li>左浮动</li>
+<li>50px高度</li>
+<li>15px padding</li>
+<li>18px字体以及20px行高</li>
+<li>子img块状显示</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.navbar-brand</span> &#123;</div><div class="line">  <span class="attribute">float</span>: left;</div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">15px</span> <span class="number">15px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:hover</span>,</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:focus</span> &#123;</div><div class="line">  <span class="attribute">text-decoration</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span> &gt; <span class="selector-tag">img</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="collapse"><a href="#collapse" class="headerlink" title="collapse"></a>collapse</h4><pre><code>* 用于显示和隐藏可折叠内容
+* 使用`&lt;a&gt;`或者`&lt;button&gt;`添加作为折叠按钮
+    * 添加&lt;mark&gt;data-toggle=&quot;collapse&quot;&lt;/mark&gt;
+    * 添加 &lt;mark&gt;data-target=“#id&quot;&lt;/mark&gt;来指定折叠内容
+    * 对于`&lt;a&gt;`可以使用href代替data-target指定折叠内容
+* 对于需要折叠的内容添加&quot;collapse&quot; class
+</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-sm-6 col-sm-offset-1"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#collapse-id"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span>&gt;</span>collapse<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"collapse-id"</span> <span class="attr">class</span>=<span class="string">"collapse"</span>&gt;</span></div><div class="line">			Content that can be collapsed</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<div class="container"><br>   <div class="row"><br>   <div class="col-sm-6 col-sm-offset-1"><br>        <a href="#collapse-id" data-toggle="collapse">collapse</a><br>        <div id="collapse-id" class="collapse"><br>            Content that can be collapsed<br>        </div><br>    </div><br>   </div><br></div>
 ]]></content>
     </entry>
     

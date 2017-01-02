@@ -85,22 +85,22 @@
 
 
 <meta name="description" content="用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。
-媒体查询bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置
-123456789101112131415161718192021222324252627@media (min-">
+引入bootstrap库为了提高速度，最好采用CDN的bootstrap，jquery需要在bootstrap之前引入，否则可能会出现问题。
+123&amp;lt;link href=&quot;//cdn.bootcss.com/bootstra">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bootstrap学习笔记">
 <meta property="og:url" content="http://yoursite.com/2016/12/30/bootstrap学习笔记/index.html">
 <meta property="og:site_name" content="IT小猪猪的笔记本">
 <meta property="og:description" content="用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。
-媒体查询bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置
-123456789101112131415161718192021222324252627@media (min-">
+引入bootstrap库为了提高速度，最好采用CDN的bootstrap，jquery需要在bootstrap之前引入，否则可能会出现问题。
+123&amp;lt;link href=&quot;//cdn.bootcss.com/bootstra">
 <meta property="og:image" content="http://p1.bqimg.com/567571/76676867f16a93e7.png">
-<meta property="og:updated_time" content="2016-12-31T14:16:54.000Z">
+<meta property="og:updated_time" content="2017-01-02T15:02:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bootstrap学习笔记">
 <meta name="twitter:description" content="用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。
-媒体查询bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置
-123456789101112131415161718192021222324252627@media (min-">
+引入bootstrap库为了提高速度，最好采用CDN的bootstrap，jquery需要在bootstrap之前引入，否则可能会出现问题。
+123&amp;lt;link href=&quot;//cdn.bootcss.com/bootstra">
 <meta name="twitter:image" content="http://p1.bqimg.com/567571/76676867f16a93e7.png">
 
 
@@ -346,7 +346,18 @@
       
 
       
-        <p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
+        <p><link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></p>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<p>用了一段时间的bootstrap了，觉得得写点什么，不然过段时间之后就又会忘记得差不多了。bootstrap框架主要包含了一些快速开发的css和js组件。</p>
+<h3 id="引入bootstrap库"><a href="#引入bootstrap库" class="headerlink" title="引入bootstrap库"></a>引入bootstrap库</h3><p>为了提高速度，最好采用CDN的bootstrap，jquery需要在bootstrap之前引入，否则可能会出现问题。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;link href=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</div><div class="line">&lt;script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<button class="btn btn-danger">button</button>
+
 <h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><p>bootstrap使用了媒体查询来实现响应式布局，比如对于container，针对不同的设备宽度可以进行不同的css设置</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">576px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">540px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">720px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">1140px</span>;</div><div class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>bootstrap主要定义了以下几个分辨率切换点</p>
@@ -386,8 +397,8 @@
 <li>col-[xs,sm,md,lg]-[1,12]提供了相对布局，15px的左右padding，左浮动</li>
 <li>使用媒体查询，根据不同的viewport大小，将有不同类型的col-[xs,sm,md,lg]生效<ul>
 <li>col-xs: &lt; 768px  手机</li>
-<li>col-sm: 768px ~ 991px 平板</li>
-<li>col-md: 992px ~ 1199px 桌面显示器</li>
+<li>col-sm: &gt; 768px  平板</li>
+<li>col-md: &gt; 992px  桌面显示器</li>
 <li>col-lg: &gt; 1200px 大桌面显示器</li>
 </ul>
 </li>
@@ -426,8 +437,34 @@
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.lead</span> &#123;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</div><div class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1.4</span>;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.lead</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">21px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
-<li></li>
+<li><h4 id="内联文本元素"><a href="#内联文本元素" class="headerlink" title="内联文本元素"></a>内联文本元素</h4><h5 id="标记-高亮-mark"><a href="#标记-高亮-mark" class="headerlink" title="标记 高亮 mark"></a>标记 高亮 mark</h5><p>mark元素用于高亮显示文本，更改了背景色和前景色已经padding</p>
+</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mark</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#ff0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">mark</span>,</div><div class="line"><span class="selector-class">.mark</span> &#123;</div><div class="line">  <span class="attribute">padding</span>: .<span class="number">2em</span>;</div><div class="line">  <span class="attribute">background-color</span>: <span class="number">#fcf8e3</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>this is a <mark>mark</mark></p>
+<h3 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h3><h4 id="navbar"><a href="#navbar" class="headerlink" title="navbar"></a>navbar</h4><pre><code>* display: none
+* 相对布局
+* 最小高度50px
+* 下补足20px
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.navbar</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.navbar</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">min-height</span>: <span class="number">50px</span>;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid transparent;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="navbar-header"><a href="#navbar-header" class="headerlink" title="navbar-header"></a>navbar-header</h4><pre><code>* 大于768px时左浮动
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.navbar-header</span> &#123;</div><div class="line">    <span class="attribute">float</span>: left;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="navbar-brand"><a href="#navbar-brand" class="headerlink" title="navbar-brand"></a>navbar-brand</h4><ul>
+<li>左浮动</li>
+<li>50px高度</li>
+<li>15px padding</li>
+<li>18px字体以及20px行高</li>
+<li>子img块状显示</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.navbar-brand</span> &#123;</div><div class="line">  <span class="attribute">float</span>: left;</div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">15px</span> <span class="number">15px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:hover</span>,</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:focus</span> &#123;</div><div class="line">  <span class="attribute">text-decoration</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span> &gt; <span class="selector-tag">img</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="collapse"><a href="#collapse" class="headerlink" title="collapse"></a>collapse</h4><pre><code>* 用于显示和隐藏可折叠内容
+* 使用`&lt;a&gt;`或者`&lt;button&gt;`添加作为折叠按钮
+    * 添加&lt;mark&gt;data-toggle=&quot;collapse&quot;&lt;/mark&gt;
+    * 添加 &lt;mark&gt;data-target=“#id&quot;&lt;/mark&gt;来指定折叠内容
+    * 对于`&lt;a&gt;`可以使用href代替data-target指定折叠内容
+* 对于需要折叠的内容添加&quot;collapse&quot; class
+</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-sm-6 col-sm-offset-1"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#collapse-id"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span>&gt;</span>collapse<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"collapse-id"</span> <span class="attr">class</span>=<span class="string">"collapse"</span>&gt;</span></div><div class="line">			Content that can be collapsed</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<div class="container"><br>   <div class="row"><br>   <div class="col-sm-6 col-sm-offset-1"><br>        <a href="#collapse-id" data-toggle="collapse">collapse</a><br>        <div id="collapse-id" class="collapse"><br>            Content that can be collapsed<br>        </div><br>    </div><br>   </div><br></div>
 
       
     </div>
@@ -542,7 +579,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -553,7 +590,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -588,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询"><span class="nav-number">1.</span> <span class="nav-text">媒体查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网格系统"><span class="nav-number">2.</span> <span class="nav-text">网格系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#container"><span class="nav-number">2.1.</span> <span class="nav-text">container</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#container-fluid"><span class="nav-number">2.2.</span> <span class="nav-text">container-fluid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#row"><span class="nav-number">2.3.</span> <span class="nav-text">row</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#col"><span class="nav-number">2.4.</span> <span class="nav-text">col</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版"><span class="nav-number">3.</span> <span class="nav-text">排版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#标题-h1-h2-h3-h4-h5-h6"><span class="nav-number">3.1.</span> <span class="nav-text">标题 h1,h2,h3,h4,h5,h6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#副标题-small"><span class="nav-number">3.2.</span> <span class="nav-text">副标题 small</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#页面主体与段落-body-p"><span class="nav-number">3.3.</span> <span class="nav-text">页面主体与段落 body p</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引入bootstrap库"><span class="nav-number">1.</span> <span class="nav-text">引入bootstrap库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询"><span class="nav-number">2.</span> <span class="nav-text">媒体查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网格系统"><span class="nav-number">3.</span> <span class="nav-text">网格系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#container"><span class="nav-number">3.1.</span> <span class="nav-text">container</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#container-fluid"><span class="nav-number">3.2.</span> <span class="nav-text">container-fluid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#row"><span class="nav-number">3.3.</span> <span class="nav-text">row</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#col"><span class="nav-number">3.4.</span> <span class="nav-text">col</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版"><span class="nav-number">4.</span> <span class="nav-text">排版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#标题-h1-h2-h3-h4-h5-h6"><span class="nav-number">4.1.</span> <span class="nav-text">标题 h1,h2,h3,h4,h5,h6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#副标题-small"><span class="nav-number">4.2.</span> <span class="nav-text">副标题 small</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#页面主体与段落-body-p"><span class="nav-number">4.3.</span> <span class="nav-text">页面主体与段落 body p</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内联文本元素"><span class="nav-number">4.4.</span> <span class="nav-text">内联文本元素</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#标记-高亮-mark"><span class="nav-number">4.4.1.</span> <span class="nav-text">标记 高亮 mark</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航"><span class="nav-number">5.</span> <span class="nav-text">导航</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#navbar"><span class="nav-number">5.1.</span> <span class="nav-text">navbar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#navbar-header"><span class="nav-number">5.2.</span> <span class="nav-text">navbar-header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#navbar-brand"><span class="nav-number">5.3.</span> <span class="nav-text">navbar-brand</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#collapse"><span class="nav-number">5.4.</span> <span class="nav-text">collapse</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -609,7 +646,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
