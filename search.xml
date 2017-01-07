@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title></title>
+      <url>http://yoursite.com/2017/01/07/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%80%89%E6%8B%A9/</url>
+      <content type="html"><![CDATA[<h3 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h3><p>阿里虚拟机，可调内存大小和带宽，并且需要有自己的域名</p>
+<h3 id="线上方式形式"><a href="#线上方式形式" class="headerlink" title="线上方式形式"></a>线上方式形式</h3><p><a href="https://open.weixin.qq.com/" target="_blank" rel="external">首页</a></p>
+<ul>
+<li>微信公众号第三方平台</li>
+<li>微信网站应用</li>
+<li>微信公众账号</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Outlook使用技巧]]></title>
+      <url>http://yoursite.com/2017/01/05/Outlook%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+      <content type="html"><![CDATA[<p>工作的过程中经常会花很多的时间在阅读邮件上，该文章主要用来整理一些小技巧来提高效率。</p>
+<h3 id="自动分类邮件"><a href="#自动分类邮件" class="headerlink" title="自动分类邮件"></a>自动分类邮件</h3><p>有些邮件你经常被抄送上，但是你并不在意这些邮件，方法很简单，自动将这些邮件挪到指定的目录去。</p>
+<ul>
+<li><p>选择你需要移动的邮件<br><img src="http://i1.piimg.com/567571/ef51b22ef910d13f.png" alt=""></p>
+</li>
+<li><p>选择move<br><img src="http://p1.bqimg.com/567571/27db61166585ba36.png" alt=""></p>
+</li>
+<li><p>选择always move message from this conversation<br><img src="http://p1.bqimg.com/567571/49e47ee905be5f6e.png" alt=""></p>
+</li>
+<li><p>选择你希望移动到的目录，然后选择ok<br><img src="http://p1.bqimg.com/567571/2a9223a0746de22c.png" alt=""></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[提高百度云下载速度]]></title>
       <url>http://yoursite.com/2017/01/02/%E6%8F%90%E9%AB%98%E7%99%BE%E5%BA%A6%E4%BA%91%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6/</url>
       <content type="html"><![CDATA[<p>百度云对下载速度进行了限制，为了提高下载速度可以使用<a href="https://github.com/GangZhuo/BaiduPCS" target="_blank" rel="external">BaiduPcs</a>工具进行下载。<br>以下是Mac下安装该软看，具体可以参考帮助文档</p>
@@ -144,13 +175,15 @@
 <li>子img块状显示</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.navbar-brand</span> &#123;</div><div class="line">  <span class="attribute">float</span>: left;</div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">15px</span> <span class="number">15px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:hover</span>,</div><div class="line"><span class="selector-class">.navbar-brand</span><span class="selector-pseudo">:focus</span> &#123;</div><div class="line">  <span class="attribute">text-decoration</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.navbar-brand</span> &gt; <span class="selector-tag">img</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="collapse"><a href="#collapse" class="headerlink" title="collapse"></a>collapse</h4><pre><code>* 用于显示和隐藏可折叠内容
-* 使用`&lt;a&gt;`或者`&lt;button&gt;`添加作为折叠按钮
-    * 添加&lt;mark&gt;data-toggle=&quot;collapse&quot;&lt;/mark&gt;
-    * 添加 &lt;mark&gt;data-target=“#id&quot;&lt;/mark&gt;来指定折叠内容
-    * 对于`&lt;a&gt;`可以使用href代替data-target指定折叠内容
-* 对于需要折叠的内容添加&quot;collapse&quot; class
-</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-sm-6 col-sm-offset-1"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#collapse-id"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span>&gt;</span>collapse<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"collapse-id"</span> <span class="attr">class</span>=<span class="string">"collapse"</span>&gt;</span></div><div class="line">			Content that can be collapsed</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="collapse"><a href="#collapse" class="headerlink" title="collapse"></a>collapse</h4><ul>
+<li>用于显示和隐藏可折叠内容</li>
+<li>使用<code>&lt;a&gt;</code>或者<code>&lt;button&gt;</code>添加作为折叠按钮</li>
+<li>添加<mark>data-toggle=”collapse”</mark></li>
+<li>添加 <mark>data-target=“#id”</mark>来指定折叠内容</li>
+<li>对于<code>&lt;a&gt;</code>可以使用href代替data-target指定折叠内容</li>
+<li>对于需要折叠的内容添加”collapse” class<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-sm-6 col-sm-offset-1"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#collapse-id"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span>&gt;</span>collapse<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"collapse-id"</span> <span class="attr">class</span>=<span class="string">"collapse"</span>&gt;</span></div><div class="line">			Content that can be collapsed</div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
 <div class="container"><br>   <div class="row"><br>   <div class="col-sm-6 col-sm-offset-1"><br>        <a href="#collapse-id" data-toggle="collapse">collapse</a><br>        <div id="collapse-id" class="collapse"><br>            Content that can be collapsed<br>        </div><br>    </div><br>   </div><br></div>
 ]]></content>
     </entry>
