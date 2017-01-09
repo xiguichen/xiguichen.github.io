@@ -4,14 +4,17 @@
   
     
     <entry>
-      <title></title>
-      <url>http://yoursite.com/2017/01/07/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%80%89%E6%8B%A9/</url>
-      <content type="html"><![CDATA[<h3 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h3><p>阿里虚拟机，可调内存大小和带宽，并且需要有自己的域名</p>
-<h3 id="线上方式形式"><a href="#线上方式形式" class="headerlink" title="线上方式形式"></a>线上方式形式</h3><p><a href="https://open.weixin.qq.com/" target="_blank" rel="external">首页</a></p>
-<ul>
-<li>微信公众号第三方平台</li>
-<li>微信网站应用</li>
-<li>微信公众账号</li>
+      <title><![CDATA[vim使用技巧]]></title>
+      <url>http://yoursite.com/2017/01/09/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+      <content type="html"><![CDATA[<h3 id="解决YouCompleteMe与ultisnips的冲突"><a href="#解决YouCompleteMe与ultisnips的冲突" class="headerlink" title="解决YouCompleteMe与ultisnips的冲突"></a>解决YouCompleteMe与ultisnips的冲突</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" YouCompleteMe conflict with ultisnips 'tab'</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_select_completion</span> = [<span class="string">'&lt;c-n&gt;'</span>, <span class="string">'&lt;Down&gt;'</span>]</div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_previous_completion</span> = [<span class="string">'&lt;c-p&gt;'</span>, <span class="string">'&lt;Up&gt;'</span>]</div><div class="line"></div><div class="line"><span class="comment">" For the shotkey conflict with ultisnips</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsExpandTrigger</span>=<span class="string">"&lt;tab&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpForwardTrigger</span>=<span class="string">"&lt;c-b&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpBackwardTrigger</span>=<span class="string">"&lt;c-z&gt;"</span></div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[文章推荐]]></title>
+      <url>http://yoursite.com/2017/01/07/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90/</url>
+      <content type="html"><![CDATA[<h3 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h3><ul>
+<li><a href="https://github.com/justjavac/awesome-wechat-weapp/blob/master/README.md" target="_blank" rel="external">文章汇总</a></li>
 </ul>
 ]]></content>
     </entry>
