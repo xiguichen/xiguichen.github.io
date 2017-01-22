@@ -4,9 +4,39 @@
   
     
     <entry>
+      <title><![CDATA[meteor articles]]></title>
+      <url>http://yoursite.com/2017/01/22/meteor-articles/</url>
+      <content type="html"><![CDATA[<p><a href="https://themeteorchef.com/blog/what-is-es2015" target="_blank" rel="external">What is ES2015</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[meteor问题汇总]]></title>
+      <url>http://yoursite.com/2017/01/15/meteor%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>
+      <content type="html"><![CDATA[<h3 id="Error-prompt-missing-babel-runtime-meteor-npm-install-–save-babel-runtime"><a href="#Error-prompt-missing-babel-runtime-meteor-npm-install-–save-babel-runtime" class="headerlink" title="Error prompt missing babel-runtime: meteor npm install –save babel-runtime"></a>Error prompt missing babel-runtime: meteor npm install –save babel-runtime</h3><p>To fix the problem:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rm -rf node_modules</div><div class="line">meteor npm install</div></pre></td></tr></table></figure></p>
+<h3 id="Error-prompt-compile-npm-bcrypt-failed"><a href="#Error-prompt-compile-npm-bcrypt-failed" class="headerlink" title="Error prompt compile npm-bcrypt failed"></a>Error prompt compile npm-bcrypt failed</h3><p>To fix the problem<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">meteor update</div><div class="line">meteor update --all-packages</div></pre></td></tr></table></figure></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[vim使用技巧]]></title>
       <url>http://yoursite.com/2017/01/09/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
-      <content type="html"><![CDATA[<h3 id="解决YouCompleteMe与ultisnips的冲突"><a href="#解决YouCompleteMe与ultisnips的冲突" class="headerlink" title="解决YouCompleteMe与ultisnips的冲突"></a>解决YouCompleteMe与ultisnips的冲突</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" YouCompleteMe conflict with ultisnips 'tab'</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_select_completion</span> = [<span class="string">'&lt;c-n&gt;'</span>, <span class="string">'&lt;Down&gt;'</span>]</div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_previous_completion</span> = [<span class="string">'&lt;c-p&gt;'</span>, <span class="string">'&lt;Up&gt;'</span>]</div><div class="line"></div><div class="line"><span class="comment">" For the shotkey conflict with ultisnips</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsExpandTrigger</span>=<span class="string">"&lt;tab&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpForwardTrigger</span>=<span class="string">"&lt;c-b&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpBackwardTrigger</span>=<span class="string">"&lt;c-z&gt;"</span></div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<h3 id="window-操作"><a href="#window-操作" class="headerlink" title="window 操作"></a>window 操作</h3><ul>
+<li><p>竖向分割当前窗口<br>CTRL-W CTRL-V<br>CTRL-W v</p>
+</li>
+<li><p>横向分割当前窗口<br>CTRL-W s<br>CTRL-W S</p>
+</li>
+<li><p>创建新窗口<br>CTRL-W n<br>CTRL-W CTRL-N</p>
+</li>
+<li><p>关闭窗口<br>CTRL-W q<br>CTRL-W CTRL-Q<br>CTRL-W c</p>
+</li>
+<li><p>关闭除当前窗口外的所有窗口<br>CTRl-W o<br>CTRL-W CTRL-O</p>
+</li>
+<li><p>交换窗口<br>CTRL-W r<br>CTRL-W CTRL-R<br>CTRL-W R<br>CTRL-W x</p>
+</li>
+<li><p>窗口大小<br>CTRL-W -<br>CTRL-W +<br>:resize [n]<br>z{nr}<cr><br>CTRL-W &gt;<br>CTRL-W &lt;<br>CTRL-W CTRL-X<br>:vertical resize [n]</cr></p>
+</li>
+</ul>
 ]]></content>
     </entry>
     

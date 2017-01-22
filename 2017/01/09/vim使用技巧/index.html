@@ -84,16 +84,49 @@
 
 
 
-<meta name="description" content="解决YouCompleteMe与ultisnips的冲突12345678&quot; YouCompleteMe conflict with ultisnips &apos;tab&apos;let g:ycm_key_list_select_completion = [&apos;&amp;lt;c-n&amp;gt;&apos;, &apos;&amp;lt;Down&amp;gt;&apos;]let g:ycm_key_list_previous_completion = [&apos;&amp;lt;c-">
+<meta name="description" content="window 操作
+竖向分割当前窗口CTRL-W CTRL-VCTRL-W v
+
+横向分割当前窗口CTRL-W sCTRL-W S
+
+创建新窗口CTRL-W nCTRL-W CTRL-N
+
+关闭窗口CTRL-W qCTRL-W CTRL-QCTRL-W c
+
+关闭除当前窗口外的所有窗口CTRl-W oCTRL-W CTRL-O
+
+交换窗口CTRL-W rCTRL-W CTRL-RCTRL-W RC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vim使用技巧">
 <meta property="og:url" content="http://yoursite.com/2017/01/09/vim使用技巧/index.html">
 <meta property="og:site_name" content="IT小猪猪的笔记本">
-<meta property="og:description" content="解决YouCompleteMe与ultisnips的冲突12345678&quot; YouCompleteMe conflict with ultisnips &apos;tab&apos;let g:ycm_key_list_select_completion = [&apos;&amp;lt;c-n&amp;gt;&apos;, &apos;&amp;lt;Down&amp;gt;&apos;]let g:ycm_key_list_previous_completion = [&apos;&amp;lt;c-">
-<meta property="og:updated_time" content="2017-01-09T14:32:47.000Z">
+<meta property="og:description" content="window 操作
+竖向分割当前窗口CTRL-W CTRL-VCTRL-W v
+
+横向分割当前窗口CTRL-W sCTRL-W S
+
+创建新窗口CTRL-W nCTRL-W CTRL-N
+
+关闭窗口CTRL-W qCTRL-W CTRL-QCTRL-W c
+
+关闭除当前窗口外的所有窗口CTRl-W oCTRL-W CTRL-O
+
+交换窗口CTRL-W rCTRL-W CTRL-RCTRL-W RC">
+<meta property="og:updated_time" content="2017-01-13T15:58:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim使用技巧">
-<meta name="twitter:description" content="解决YouCompleteMe与ultisnips的冲突12345678&quot; YouCompleteMe conflict with ultisnips &apos;tab&apos;let g:ycm_key_list_select_completion = [&apos;&amp;lt;c-n&amp;gt;&apos;, &apos;&amp;lt;Down&amp;gt;&apos;]let g:ycm_key_list_previous_completion = [&apos;&amp;lt;c-">
+<meta name="twitter:description" content="window 操作
+竖向分割当前窗口CTRL-W CTRL-VCTRL-W v
+
+横向分割当前窗口CTRL-W sCTRL-W S
+
+创建新窗口CTRL-W nCTRL-W CTRL-N
+
+关闭窗口CTRL-W qCTRL-W CTRL-QCTRL-W c
+
+关闭除当前窗口外的所有窗口CTRl-W oCTRL-W CTRL-O
+
+交换窗口CTRL-W rCTRL-W CTRL-RCTRL-W RC">
 
 
 
@@ -338,7 +371,22 @@
       
 
       
-        <h3 id="解决YouCompleteMe与ultisnips的冲突"><a href="#解决YouCompleteMe与ultisnips的冲突" class="headerlink" title="解决YouCompleteMe与ultisnips的冲突"></a>解决YouCompleteMe与ultisnips的冲突</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" YouCompleteMe conflict with ultisnips 'tab'</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_select_completion</span> = [<span class="string">'&lt;c-n&gt;'</span>, <span class="string">'&lt;Down&gt;'</span>]</div><div class="line"><span class="keyword">let</span> <span class="variable">g:ycm_key_list_previous_completion</span> = [<span class="string">'&lt;c-p&gt;'</span>, <span class="string">'&lt;Up&gt;'</span>]</div><div class="line"></div><div class="line"><span class="comment">" For the shotkey conflict with ultisnips</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsExpandTrigger</span>=<span class="string">"&lt;tab&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpForwardTrigger</span>=<span class="string">"&lt;c-b&gt;"</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:UltiSnipsJumpBackwardTrigger</span>=<span class="string">"&lt;c-z&gt;"</span></div></pre></td></tr></table></figure>
+        <h3 id="window-操作"><a href="#window-操作" class="headerlink" title="window 操作"></a>window 操作</h3><ul>
+<li><p>竖向分割当前窗口<br>CTRL-W CTRL-V<br>CTRL-W v</p>
+</li>
+<li><p>横向分割当前窗口<br>CTRL-W s<br>CTRL-W S</p>
+</li>
+<li><p>创建新窗口<br>CTRL-W n<br>CTRL-W CTRL-N</p>
+</li>
+<li><p>关闭窗口<br>CTRL-W q<br>CTRL-W CTRL-Q<br>CTRL-W c</p>
+</li>
+<li><p>关闭除当前窗口外的所有窗口<br>CTRl-W o<br>CTRL-W CTRL-O</p>
+</li>
+<li><p>交换窗口<br>CTRL-W r<br>CTRL-W CTRL-R<br>CTRL-W R<br>CTRL-W x</p>
+</li>
+<li><p>窗口大小<br>CTRL-W -<br>CTRL-W +<br>:resize [n]<br>z{nr}<cr><br>CTRL-W &gt;<br>CTRL-W &lt;<br>CTRL-W CTRL-X<br>:vertical resize [n]</cr></p>
+</li>
+</ul>
 
       
     </div>
@@ -374,6 +422,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/15/meteor问题汇总/" rel="prev" title="meteor问题汇总">
+                meteor问题汇总 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -443,7 +495,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -489,7 +541,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决YouCompleteMe与ultisnips的冲突"><span class="nav-number">1.</span> <span class="nav-text">解决YouCompleteMe与ultisnips的冲突</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#window-操作"><span class="nav-number">1.</span> <span class="nav-text">window 操作</span></a></li></ol></div>
             
 
           </div>
